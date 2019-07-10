@@ -14,6 +14,7 @@
     <modules>
         <module>nacos-provide</module>
         <module>nacos-consumer</module>
+        <module>nacos-feign</module>
     </modules>
 
     <artifactId>Nacos</artifactId>

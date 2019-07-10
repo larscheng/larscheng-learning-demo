@@ -15,8 +15,16 @@ public class NacosProvideApplication {
         SpringApplication.run(NacosProvideApplication.class, args);
     }
 
+
     @GetMapping("/helloNacos")
     public String helloNacos(){
         return "你好，nacos！";
     }
 }
+
+
+
+
+
+
+

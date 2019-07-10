@@ -23,8 +23,9 @@
       * [享元模式](Design-Patterns/src/main/java/structuredmodel/flyweightmode/README.md)  
       * [组合模式](Design-Patterns/src/main/java/structuredmodel/compositemode/README.md)  
       
-  * [行为型模式]()
-      * [责任链模式]()  
+  * [行为型模式](Design-Patterns/src/main/java/behavioralmodel/README.md)
+      * [模板方法模式](Design-Patterns/src/main/java/behavioralmodel/templatemethodmode/README.md)  
+      * [策略模式](Design-Patterns/src/main/java/behavioralmodel/strategymode/README.md)  
       * [命令模式模式]()  
       * [解释器模式]()  
       * [迭代器模式]()    
@@ -38,5 +39,6 @@
 
   * [Nacos介绍](Nacos/Nacos-Introduction.md)
   * [Nacos注册中心](Nacos/Nacos-Registration.md)
+  * [Nacos+OpenFeign](Nacos/Nacos-OpenFeign.md)
   * [Nacos配置中心]()
   * [Nacos避坑指南]()

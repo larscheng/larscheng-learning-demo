@@ -29,8 +29,7 @@ public class NacosConsumerApplication {
     }
 
     @GetMapping("/consumer")
-    public String test1() {
-        String result = restTemplate.getForObject("http://nacos-provide/helloNacos",String.class);
-        return "Return : " + result;
+    public String test() {
+        return restTemplate.getForObject("http://nacos-provide/helloNacos",String.class);
     }
 }
