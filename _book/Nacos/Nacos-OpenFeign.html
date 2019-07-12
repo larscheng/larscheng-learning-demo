@@ -1,0 +1,793 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Nacos+OpenFeign · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Nacos-Registration.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">设计模式</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Design-Patterns/">
+            
+                <a href="../Design-Patterns/">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" >
+            
+                <span>
+            
+                    
+                    创建型模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" >
+            
+                <span>
+            
+                    
+                    简单工厂模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" >
+            
+                <span>
+            
+                    
+                    工厂方法模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../Design-Patterns/src/main/java/createdmodel/abstractfactorymode/">
+            
+                <a href="../Design-Patterns/src/main/java/createdmodel/abstractfactorymode/">
+            
+                    
+                    抽象工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../Design-Patterns/src/main/java/createdmodel/bulidermode/">
+            
+                <a href="../Design-Patterns/src/main/java/createdmodel/bulidermode/">
+            
+                    
+                    建造者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="../Design-Patterns/src/main/java/createdmodel/prototypemode/">
+            
+                <a href="../Design-Patterns/src/main/java/createdmodel/prototypemode/">
+            
+                    
+                    原型模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6" data-path="../Design-Patterns/src/main/java/createdmodel/singletonmode/">
+            
+                <a href="../Design-Patterns/src/main/java/createdmodel/singletonmode/">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../Design-Patterns/src/main/java/structuredmodel/">
+            
+                <a href="../Design-Patterns/src/main/java/structuredmodel/">
+            
+                    
+                    结构型模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../Design-Patterns/src/main/java/structuredmodel/proxymode/">
+            
+                <a href="../Design-Patterns/src/main/java/structuredmodel/proxymode/">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../Design-Patterns/src/main/java/structuredmodel/adaptermode/">
+            
+                <a href="../Design-Patterns/src/main/java/structuredmodel/adaptermode/">
+            
+                    
+                    适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../Design-Patterns/src/main/java/structuredmodel/bridgemode/">
+            
+                <a href="../Design-Patterns/src/main/java/structuredmodel/bridgemode/">
+            
+                    
+                    桥接模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="../Design-Patterns/src/main/java/structuredmodel/decoratormode/">
+            
+                <a href="../Design-Patterns/src/main/java/structuredmodel/decoratormode/">
+            
+                    
+                    装饰模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="../Design-Patterns/src/main/java/structuredmodel/facademode/">
+            
+                <a href="../Design-Patterns/src/main/java/structuredmodel/facademode/">
+            
+                    
+                    外观模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.6" data-path="../Design-Patterns/src/main/java/structuredmodel/flyweightmode/">
+            
+                <a href="../Design-Patterns/src/main/java/structuredmodel/flyweightmode/">
+            
+                    
+                    享元模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.7" data-path="../Design-Patterns/src/main/java/structuredmodel/compositemode/">
+            
+                <a href="../Design-Patterns/src/main/java/structuredmodel/compositemode/">
+            
+                    
+                    组合模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../Design-Patterns/src/main/java/behavioralmodel/">
+            
+                <a href="../Design-Patterns/src/main/java/behavioralmodel/">
+            
+                    
+                    行为型模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../Design-Patterns/src/main/java/behavioralmodel/templatemethodmode/">
+            
+                <a href="../Design-Patterns/src/main/java/behavioralmodel/templatemethodmode/">
+            
+                    
+                    模板方法模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../Design-Patterns/src/main/java/behavioralmodel/strategymode/">
+            
+                <a href="../Design-Patterns/src/main/java/behavioralmodel/strategymode/">
+            
+                    
+                    策略模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" >
+            
+                <span>
+            
+                    
+                    命令模式模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" >
+            
+                <span>
+            
+                    
+                    解释器模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" >
+            
+                <span>
+            
+                    
+                    迭代器模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" >
+            
+                <span>
+            
+                    
+                    中介者模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" >
+            
+                <span>
+            
+                    
+                    未完待续....
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Nacos</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    Nacos
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="Nacos-Introduction.html">
+            
+                <a href="Nacos-Introduction.html">
+            
+                    
+                    Nacos介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="Nacos-Registration.html">
+            
+                <a href="Nacos-Registration.html">
+            
+                    
+                    Nacos注册中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.3" data-path="Nacos-OpenFeign.html">
+            
+                <a href="Nacos-OpenFeign.html">
+            
+                    
+                    Nacos+OpenFeign
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" >
+            
+                <span>
+            
+                    
+                    Nacos配置中心
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" >
+            
+                <span>
+            
+                    
+                    Nacos避坑指南
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Nacos+OpenFeign</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="nacos&#xFF08;&#x4E09;&#xFF09;&#xFF1A;nacos&#x4E0E;openfeign&#x7684;&#x5BF9;&#x63A5;&#x4F7F;&#x7528;">Nacos&#xFF08;&#x4E09;&#xFF09;&#xFF1A;Nacos&#x4E0E;OpenFeign&#x7684;&#x5BF9;&#x63A5;&#x4F7F;&#x7528;</h2>
+<h3 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h3>
+<p>&#x4E0A;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x4E86;<code>&#x5982;&#x4F55;&#x5728;SpringCloud&#x9879;&#x76EE;&#x4E2D;&#x63A5;&#x5165;Nacos&#x4F5C;&#x4E3A;&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;</code>&#xFF0C;&#x5176;&#x4E2D;&#x670D;&#x52A1;&#x6D88;&#x8D39;&#x8005;&#x662F;&#x901A;&#x8FC7;RestTemplate+Ribbon&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8FDB;&#x884C;&#x670D;&#x52A1;&#x8C03;&#x7528;&#x7684;&#x3002;</p>
+<p>&#x5B9E;&#x9645;&#x4E0A;&#x5728;&#x65E5;&#x5E38;&#x9879;&#x76EE;&#x4E2D;&#x670D;&#x52A1;&#x95F4;&#x8C03;&#x7528;&#x5927;&#x90FD;&#x7528;&#x7684;&#x662F;<code>OpenFeign</code>, OpenFeign&#x81EA;&#x8EAB;&#x6574;&#x5408;&#x4E86;Ribbon&#x548C;Hystrix&#xFF0C;&#x4E3A;&#x670D;&#x52A1;&#x8C03;&#x7528;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x4F18;&#x96C5;&#x7684;&#x65B9;&#x5F0F;</p>
+<p>&#x90A3;&#x4E48;&#x63A5;&#x5165;&#x4E86;Nacos&#x4E4B;&#x540E;&#xFF0C;&#x670D;&#x52A1;&#x8C03;&#x7528;&#x8FD8;&#x80FD;&#x7528;&#x8FD9;&#x4E00;&#x5957;&#x5417;&#xFF1F;</p>
+<p>&#x901A;&#x8FC7;&#x6211;&#x5728;&#x516C;&#x53F8;&#x9879;&#x76EE;&#x4E0A;&#x7684;&#x8BD5;&#x6C34;&#xFF0C;&#x8FD9;&#x4E2A;&#x5927;&#x80C6;&#x7684;&#x8BBE;&#x60F3;&#x662F;&#x5B8C;&#x5168;&#x6CA1;&#x95EE;&#x9898;&#x7684;</p>
+<p><strong><em>&#x672C;&#x6587;&#x5728;&#x4E0A;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#x7684;&#x9879;&#x76EE;&#x5DE5;&#x7A0B;&#x57FA;&#x7840;&#x4E0A;</em>&#xFF0C;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x548C;&#x6F14;&#x793A;&#xFF0C;&#x6587;&#x7AE0;&#x5730;&#x5740;&#xFF1A;<a href="http://larscheng.coding.me/Nacos%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9ASpringCloud-Nacos%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83/" target="_blank">&#x5728;SpringCloud&#x9879;&#x76EE;&#x4E2D;&#x63A5;&#x5165;Nacos&#x4F5C;&#x4E3A;&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;</a></strong></p>
+<h3 id="&#x521B;&#x5EFA;&#x9879;&#x76EE;">&#x521B;&#x5EFA;&#x9879;&#x76EE;</h3>
+<p>&#x6253;&#x5F00;&#x4E4B;&#x524D;&#x521B;&#x5EFA;&#x7684;&#x5DE5;&#x7A0B;Nacos&#xFF0C;&#x76EE;&#x524D;&#x5DF2;&#x7ECF;&#x6709;&#x4E24;&#x4E2A;&#x5B50;&#x5DE5;&#x7A0B;&#xFF1A;</p>
+<ul>
+<li>nacos-provide&#xFF1A;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;</li>
+<li>nacos-consumer&#xFF1A;&#x670D;&#x52A1;&#x6D88;&#x8D39;&#x8005;&#xFF08;RestTemplate+Ribbon&#x670D;&#x52A1;&#x8C03;&#x7528;&#xFF09;</li>
+</ul>
+<p>&#x540C;&#x6837;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5728;Nacos&#x9879;&#x76EE;&#x4E0B;&#x7EE7;&#x7EED;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Springboot&#x9879;&#x76EE;&#x540D;&#x4E3A;nacos-feign&#xFF0C;&#x521B;&#x5EFA;&#x65F6;&#x6DFB;&#x52A0;OpenFeign&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x5982;&#x56FE;&#xFF1A;</p>
+<p>nacos-fegin&#x7684;pom.xml&#x6587;&#x4EF6;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">project</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+         <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">modelVersion</span>&gt;</span>4.0.0<span class="hljs-tag">&lt;/<span class="hljs-name">modelVersion</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">parent</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>Nacos<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.study.www<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>0.0.1-SNAPSHOT<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">parent</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.larscheng.www<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>nacos-fegin<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>0.0.1-SNAPSHOT<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>nacos-fegin<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>Demo project for Spring Boot<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">properties</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">java.version</span>&gt;</span>1.8<span class="hljs-tag">&lt;/<span class="hljs-name">java.version</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">properties</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-alibaba-nacos-discovery<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-openfeign<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">build</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">plugins</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">plugin</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-maven-plugin<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">plugin</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">plugins</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">build</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">project</span>&gt;</span>
+</code></pre>
+<h3 id="&#x5B9A;&#x4E49;&#x8FDC;&#x7A0B;&#x63A5;&#x53E3;">&#x5B9A;&#x4E49;&#x8FDC;&#x7A0B;&#x63A5;&#x53E3;</h3>
+<p>&#x521B;&#x5EFA;RemoteClient&#x63A5;&#x53E3;&#xFF0C;&#x6765;&#x5B9A;&#x4E49;OpenFeign&#x8981;&#x8C03;&#x7528;&#x7684;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x63A5;&#x53E3;&#x3002;</p>
+<p>&#x540C;&#x65F6;&#x901A;&#x8FC7;@FeginClient&#x6CE8;&#x89E3;&#x6307;&#x5B9A;&#x88AB;&#x8C03;&#x7528;&#x65B9;&#x7684;&#x670D;&#x52A1;&#x540D;&#xFF0C;&#x901A;&#x8FC7;fallback&#x5C5E;&#x6027;&#x6307;&#x5B9A;RemoteHystrix&#x7C7B;&#xFF0C;&#x6765;&#x8FDB;&#x884C;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x7684;&#x7194;&#x65AD;&#x548C;&#x964D;&#x7EA7;&#x5904;&#x7406;&#x3002;</p>
+<p>RemoteClient.java&#x4EE3;&#x7801;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-Java"><span class="hljs-meta">@FeignClient</span>(name = <span class="hljs-string">&quot;nacos-provide&quot;</span>,fallback = RemoteHystrix.class)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">RemoteClient</span> </span>{
+
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/helloNacos&quot;</span>)
+    <span class="hljs-function">String <span class="hljs-title">helloNacos</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+<p>RemoteHystrix.java&#x4EE3;&#x7801;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-Java"><span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RemoteHystrix</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">RemoteClient</span> </span>{
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">helloNacos</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;&#x8BF7;&#x6C42;&#x8D85;&#x65F6;&#x4E86;&quot;</span>;
+    }
+}
+</code></pre>
+<h3 id="&#x901A;&#x8FC7;openfeign&#x8C03;&#x7528;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;">&#x901A;&#x8FC7;OpenFeign&#x8C03;&#x7528;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;</h3>
+<p>&#x5728;&#x542F;&#x52A8;&#x7C7B;NacosFeignApplication.java&#x4E2D;&#x6DFB;&#x52A0;&#x6CE8;&#x89E3;@EnableDiscoveryClient&#x5F00;&#x542F;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x3001;&#x6DFB;&#x52A0;&#x6CE8;&#x89E3;@EnableFeignClients&#x5F00;&#x542F;OpenFeign&#xFF0C;&#x542F;&#x52A8;&#x7C7B;&#x901A;&#x8FC7;OpenFeign&#x8C03;&#x7528;&#x670D;&#x52A1;&#x4EE3;&#x7801;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@SpringBootApplication</span>
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-meta">@EnableDiscoveryClient</span>
+<span class="hljs-meta">@EnableFeignClients</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NacosFeignApplication</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        SpringApplication.run(NacosFeginApplication.class, args);
+    }
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> RemoteClient remoteClient;
+
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/feign&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">test</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> remoteClient.helloNacos();
+    }
+}
+</code></pre>
+<h3 id="&#x6DFB;&#x52A0;&#x9879;&#x76EE;&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x6DFB;&#x52A0;&#x9879;&#x76EE;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<p>&#x5728;resourse&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x6DFB;&#x52A0;application.yml&#x914D;&#x7F6E;</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">server:</span>
+<span class="hljs-attr">  port:</span> <span class="hljs-number">9529</span>
+
+<span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  application:</span>
+<span class="hljs-attr">    name:</span> nacos-feign
+<span class="hljs-attr">  cloud:</span>
+<span class="hljs-attr">    nacos:</span>
+<span class="hljs-attr">      discovery:</span>
+<span class="hljs-attr">        server-addr:</span> <span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>:<span class="hljs-number">8848</span>
+</code></pre>
+<h3 id="&#x542F;&#x52A8;&#x6D4B;&#x8BD5;">&#x542F;&#x52A8;&#x6D4B;&#x8BD5;</h3>
+<ol>
+<li>&#x542F;&#x52A8;Nacos-server</li>
+<li>&#x542F;&#x52A8;&#x9879;&#x76EE;nacos-provide</li>
+<li>&#x542F;&#x52A8;&#x9879;&#x76EE;nacos-feign</li>
+</ol>
+<p>&#x5B8C;&#x6210;&#x4EE5;&#x4E0A;&#x4E09;&#x6B65;&#x540E;&#xFF0C;&#x8BBF;&#x95EE;Nacos&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x68C0;&#x67E5;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x60C5;&#x51B5;&#xFF0C;&#x5982;&#x679C;&#x542F;&#x52A8;&#x90FD;&#x6210;&#x529F;&#xFF0C;&#x4F60;&#x770B;&#x5230;&#x7684;&#x5E94;&#x8BE5;&#x662F;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/larscheng/myImg/master/blogImg/Nacos/20190710164425.png" alt=""></p>
+<p>&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE; <a href="http://127.0.0.1:9529/feign&#xFF0C;" target="_blank">http://127.0.0.1:9529/feign&#xFF0C;</a> &#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E0E;RestTemplate&#x7ED3;&#x679C;&#x65E0;&#x5F02;&#xFF0C;&#x4F46;&#x5BF9;&#x4E8E;&#x7F16;&#x7801;&#x548C;&#x64CD;&#x4F5C;&#x65B9;&#x5F0F;&#x90FD;&#x66F4;&#x52A0;&#x4F18;&#x96C5;&#x3002;</p>
+<p>&#x8BBF;&#x95EE;nacos-feign&#x7684;&#x63A5;&#x53E3; <a href="http://127.0.0.1:9529/feign&#xFF0C;" target="_blank">http://127.0.0.1:9529/feign&#xFF0C;</a> &#x53EF;&#x4EE5;&#x901A;&#x8FC7;OpenFeign&#x8FDC;&#x7A0B;&#x8C03;&#x7528;nacos-provide&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code>&#x4F60;&#x597D;&#xFF0C;nacos&#xFF01;
+</code></pre><h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3>
+<p>OpenFegin&#x6574;&#x5408;Ribbon&#x548C;Hystrix&#xFF0C;&#x4E3A;&#x5FAE;&#x670D;&#x52A1;&#x4E2D;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x66F4;&#x4F18;&#x96C5;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x5B83;&#x652F;&#x6301;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x548C;&#x5BB9;&#x9519;&#x7194;&#x65AD;&#x673A;&#x5236;&#x3002;&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5728;SpringCloud&#x4E2D;&#x63A5;&#x5165;Nacos&#x505A;&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;&#x540E;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;&#x5176;&#x4ED6;SpringCloud&#x7EC4;&#x4EF6;&#x3002;</p>
+<p><strong><em>&#x672C;&#x6587;&#x6E90;&#x7801;</em>&#xFF1A;<a href="https://github.com/larscheng/larscheng-learning-demo/tree/master/Nacos" target="_blank">https://github.com/larscheng/larscheng-learning-demo/tree/master/Nacos</a></strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Nacos-Registration.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Nacos注册中心">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Nacos+OpenFeign","level":"3.1.3","depth":2,"next":{"title":"Nacos配置中心","level":"3.1.4","depth":2,"ref":"","articles":[]},"previous":{"title":"Nacos注册中心","level":"3.1.2","depth":2,"path":"Nacos/Nacos-Registration.md","ref":"Nacos/Nacos-Registration.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","livereload"],"pluginsConfig":{"expandable-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Nacos/Nacos-OpenFeign.md","mtime":"2019-07-10T09:09:03.793Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-10T09:11:02.299Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

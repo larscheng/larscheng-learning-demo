@@ -1,0 +1,739 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>策略模式 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../templatemethodmode/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../../../">
+            
+                <a href="../../../../../../">
+            
+                    
+                    说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">设计模式</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../../../../">
+            
+                <a href="../../../../../">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" >
+            
+                <span>
+            
+                    
+                    创建型模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" >
+            
+                <span>
+            
+                    
+                    简单工厂模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" >
+            
+                <span>
+            
+                    
+                    工厂方法模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../../createdmodel/abstractfactorymode/">
+            
+                <a href="../../createdmodel/abstractfactorymode/">
+            
+                    
+                    抽象工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../../createdmodel/bulidermode/">
+            
+                <a href="../../createdmodel/bulidermode/">
+            
+                    
+                    建造者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="../../createdmodel/prototypemode/">
+            
+                <a href="../../createdmodel/prototypemode/">
+            
+                    
+                    原型模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6" data-path="../../createdmodel/singletonmode/">
+            
+                <a href="../../createdmodel/singletonmode/">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../structuredmodel/">
+            
+                <a href="../../structuredmodel/">
+            
+                    
+                    结构型模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../../structuredmodel/proxymode/">
+            
+                <a href="../../structuredmodel/proxymode/">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../../structuredmodel/adaptermode/">
+            
+                <a href="../../structuredmodel/adaptermode/">
+            
+                    
+                    适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../../structuredmodel/bridgemode/">
+            
+                <a href="../../structuredmodel/bridgemode/">
+            
+                    
+                    桥接模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="../../structuredmodel/decoratormode/">
+            
+                <a href="../../structuredmodel/decoratormode/">
+            
+                    
+                    装饰模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="../../structuredmodel/facademode/">
+            
+                <a href="../../structuredmodel/facademode/">
+            
+                    
+                    外观模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.6" data-path="../../structuredmodel/flyweightmode/">
+            
+                <a href="../../structuredmodel/flyweightmode/">
+            
+                    
+                    享元模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.7" data-path="../../structuredmodel/compositemode/">
+            
+                <a href="../../structuredmodel/compositemode/">
+            
+                    
+                    组合模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    行为型模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../templatemethodmode/">
+            
+                <a href="../templatemethodmode/">
+            
+                    
+                    模板方法模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.3.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    策略模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" >
+            
+                <span>
+            
+                    
+                    命令模式模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" >
+            
+                <span>
+            
+                    
+                    解释器模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" >
+            
+                <span>
+            
+                    
+                    迭代器模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" >
+            
+                <span>
+            
+                    
+                    中介者模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" >
+            
+                <span>
+            
+                    
+                    未完待续....
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Nacos</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    Nacos
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../../../../../Nacos/Nacos-Introduction.html">
+            
+                <a href="../../../../../../Nacos/Nacos-Introduction.html">
+            
+                    
+                    Nacos介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../../../../../Nacos/Nacos-Registration.html">
+            
+                <a href="../../../../../../Nacos/Nacos-Registration.html">
+            
+                    
+                    Nacos注册中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../../../../../Nacos/Nacos-OpenFeign.html">
+            
+                <a href="../../../../../../Nacos/Nacos-OpenFeign.html">
+            
+                    
+                    Nacos+OpenFeign
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" >
+            
+                <span>
+            
+                    
+                    Nacos配置中心
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" >
+            
+                <span>
+            
+                    
+                    Nacos避坑指南
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../../../.." >策略模式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x7B56;&#x7565;&#x6A21;&#x5F0F;">&#x7B56;&#x7565;&#x6A21;&#x5F0F;</h3>
+<p>&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x7B97;&#x6CD5;&#xFF0C;&#x5C06;&#x6BCF;&#x4E2A;&#x7B97;&#x6CD5;&#x5C01;&#x88C5;&#x8D77;&#x6765;&#xFF0C;&#x4F7F;&#x5F97;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x4E92;&#x76F8;&#x66FF;&#x6362;&#xFF0C;&#x4E14;&#x7B97;&#x6CD5;&#x7684;&#x53D8;&#x5316;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x4F7F;&#x7528;&#x7B97;&#x6CD5;&#x7684;&#x5BA2;&#x6237;</p>
+<p>&#x5C5E;&#x4E8E;&#x5BF9;&#x8C61;&#x884C;&#x4E3A;&#x6A21;&#x5F0F;&#xFF0C;&#x901A;&#x8FC7;&#x7B97;&#x6CD5;&#x7684;&#x9632;&#x649E;&#xFF0C;&#x628A;&#x4F7F;&#x7528;&#x7B97;&#x6CD5;&#x7684;&#x8D23;&#x4EFB;&#x548C;&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x5206;&#x9694;&#x5F00;&#x6765;&#xFF0C;&#x5E76;&#x59D4;&#x6D3E;&#x7ED9;&#x4E0D;&#x540C;&#x7684;&#x5BF9;&#x8C61;&#x5BF9;&#x8FD9;&#x4E9B;&#x7B97;&#x6CD5;&#x8FDB;&#x884C;&#x7BA1;&#x7406;</p>
+<p>eg&#xFF1A;
+&#x73B0;&#x5B9E;&#x751F;&#x6D3B;&#x4E2D;&#xFF0C;&#x5B8C;&#x6210;&#x4E00;&#x9879;&#x4EFB;&#x52A1;&#x6709;&#x591A;&#x79CD;&#x89E3;&#x51B3;&#x7B56;&#x7565;&#xFF0C;&#x6BD4;&#x5982;</p>
+<p>&#x6625;&#x8FD0;&#x56DE;&#x5BB6;&#x53EF;&#x4EE5;&#x5750;&#x6C7D;&#x8F66;&#x3001;&#x5750;&#x706B;&#x8F66;&#x3001;&#x5750;&#x9AD8;&#x94C1;&#x3001;&#x5750;&#x98DE;&#x673A;&#x7B49;</p>
+<p>&#x6DD8;&#x5B9D;&#x4E70;&#x4E1C;&#x897F;&#x53EF;&#x4EE5;&#x5FAE;&#x4FE1;&#x3001;&#x652F;&#x4ED8;&#x5B9D;&#x3001;&#x670B;&#x53CB;&#x4EE3;&#x4ED8;&#x3001;&#x82B1;&#x5457;&#x7B49;&#x652F;&#x4ED8;</p>
+<p>&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7B56;&#x7565;&#x6A21;&#x5F0F;</p>
+<h3 id="&#x4F18;&#x7F3A;&#x70B9;">&#x4F18;&#x7F3A;&#x70B9;</h3>
+<p>&#x4F18;&#x70B9;&#xFF1A;</p>
+<p>&#x907F;&#x514D;&#x8FC7;&#x91CF;&#x4F7F;&#x7528;&#x591A;&#x91CD;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x8BED;&#x53E5;<br>&#x63D0;&#x4F9B;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x53EF;&#x4F9B;&#x91CD;&#x7528;&#x7684;&#x7B97;&#x6CD5;&#x65CF;&#xFF0C;&#x6070;&#x5F53;&#x4F7F;&#x7528;&#x7EE7;&#x627F;&#x53EF;&#x4EE5;&#x628A;&#x7B97;&#x6CD5;&#x65CF;&#x7684;&#x516C;&#x5171;&#x4EE3;&#x7801;&#x8F6C;&#x79FB;&#x5230;&#x7236;&#x7C7B;&#x91CC;&#x9762;&#xFF0C;&#x907F;&#x514D;&#x91CD;&#x590D;&#x7684;&#x4EE3;&#x7801;<br>&#x63D0;&#x4F9B;&#x76F8;&#x540C;&#x529F;&#x80FD;&#x4E0D;&#x540C;&#x5B9E;&#x73B0;<br>&#x5B8C;&#x7F8E;&#x5B9E;&#x73B0;&#x5F00;&#x95ED;&#x539F;&#x5219;&#xFF0C;&#x6DFB;&#x52A0;&#x65B0;&#x7B97;&#x6CD5;&#x7075;&#x6D3B;  </p>
+<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x9700;&#x8981;&#x4E86;&#x89E3;&#x6240;&#x6709;&#x7B56;&#x7565;&#x7684;&#x533A;&#x522B;&#xFF0C;&#x4EE5;&#x4FBF;&#x77E5;&#x9053;&#x4F55;&#x65F6;&#x8C03;&#x7528;&#x6307;&#x5B9A;&#x67D0;&#x7B97;&#x6CD5;<br>&#x7CFB;&#x7EDF;&#x4EE3;&#x7801;&#x590D;&#x6742;&#x5EA6;&#x589E;&#x52A0;</p>
+<h3 id="&#x89D2;&#x8272;&#x548C;&#x5B9E;&#x73B0;">&#x89D2;&#x8272;&#x548C;&#x5B9E;&#x73B0;</h3>
+<p>&#x62BD;&#x8C61;&#x7B56;&#x7565;&#x7C7B;&#xFF1A;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x516C;&#x5171;&#x63A5;&#x53E3;&#xFF0C;&#x5404;&#x79CD;&#x4E0D;&#x540C;&#x7B97;&#x6CD5;&#x4EE5;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;<br>&#x5177;&#x4F53;&#x7B56;&#x7565;&#x7C7B;&#xFF1A;&#x5B9E;&#x73B0;&#x4E86;&#x62BD;&#x8C61;&#x7B56;&#x7565;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x63D0;&#x4F9B;&#x5177;&#x4F53;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;<br>&#x73AF;&#x5883;&#x7C7B;&#xFF1A;&#x6301;&#x6709;&#x4E00;&#x4E2A;&#x7B56;&#x7565;&#x7C7B;&#x5F15;&#x7528;&#xFF0C;&#x6700;&#x7EC8;&#x4EA4;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x8C03;&#x7528;</p>
+<p><img src="http://c.biancheng.net/uploads/allimg/181116/3-1Q116103K1205.gif" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/larscheng/myImg/master/blogImg/DesignPatterns/20190710135942.png" alt=""></p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StrategyModeTest</span> </span>{
+
+
+    <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Strategy</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">strategyMethod</span><span class="hljs-params">()</span></span>;
+    }
+
+    <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ConcreteStrategyA</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Strategy</span> </span>{
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">strategyMethod</span><span class="hljs-params">()</span> </span>{
+            System.out.println(<span class="hljs-string">&quot;&#x5177;&#x4F53;&#x7B56;&#x7565;A&#x7684;&#x7B56;&#x7565;&#x65B9;&#x6CD5;&#x88AB;&#x8BBF;&#x95EE;&#xFF01;&quot;</span>);
+        }
+    }
+
+    <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ConcreteStrategyB</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Strategy</span> </span>{
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">strategyMethod</span><span class="hljs-params">()</span> </span>{
+            System.out.println(<span class="hljs-string">&quot;&#x5177;&#x4F53;&#x7B56;&#x7565;B&#x7684;&#x7B56;&#x7565;&#x65B9;&#x6CD5;&#x88AB;&#x8BBF;&#x95EE;&#xFF01;&quot;</span>);
+        }
+    }
+
+    <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Context</span> </span>{
+        <span class="hljs-keyword">private</span> Strategy strategy;
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Context</span><span class="hljs-params">(Strategy strategy)</span> </span>{
+            <span class="hljs-keyword">this</span>.strategy = strategy;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">strategyMethod</span><span class="hljs-params">()</span> </span>{
+            strategy.strategyMethod();
+        }
+    }
+
+
+    <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Client</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Client</span><span class="hljs-params">()</span> </span>{
+            Strategy strategyA = <span class="hljs-keyword">new</span> ConcreteStrategyA();
+            Context context = <span class="hljs-keyword">new</span> Context(strategyA);
+            context.strategyMethod();
+
+            System.out.println(<span class="hljs-string">&quot;----------------------------&quot;</span>);
+            Strategy strategyB = <span class="hljs-keyword">new</span> ConcreteStrategyB();
+            context = <span class="hljs-keyword">new</span> Context(strategyB);
+            context.strategyMethod();
+        }
+    }
+
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-keyword">new</span> Client();
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../templatemethodmode/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 模板方法模式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"策略模式","level":"2.1.3.2","depth":3,"next":{"title":"命令模式模式","level":"2.1.3.3","depth":3,"ref":"","articles":[]},"previous":{"title":"模板方法模式","level":"2.1.3.1","depth":3,"path":"Design-Patterns/src/main/java/behavioralmodel/templatemethodmode/README.md","ref":"Design-Patterns/src/main/java/behavioralmodel/templatemethodmode/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","livereload"],"pluginsConfig":{"expandable-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Design-Patterns/src/main/java/behavioralmodel/strategymode/README.md","mtime":"2019-07-10T06:07:31.732Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-10T09:11:02.299Z"},"basePath":"../../../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
