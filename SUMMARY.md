@@ -27,10 +27,12 @@
       * [模板方法模式](Design-Patterns/src/main/java/behavioralmodel/templatemethodmode/README.md)  
       * [策略模式](Design-Patterns/src/main/java/behavioralmodel/strategymode/README.md)  
       * [命令模式](Design-Patterns/src/main/java/behavioralmodel/commandmode/README.md)  
-      * [责任链模式](Design-Patterns/src/main/java/behavioralmodel/chainofresponsibility/README.md)  
+      * [责任链模式](Design-Patterns/src/main/java/behavioralmodel/chainofresponsibility/README.md)
+      * [状态模式](Design-Patterns/src/main/java/behavioralmodel/statemode/README.md)
+      * [观察者模式](Design-Patterns/src/main/java/behavioralmodel/observermode/README.md)
+      * [中介者模式](Design-Patterns/src/main/java/behavioralmodel/mediatormode/README.md)    
       * [解释器模式]()  
       * [迭代器模式]()    
-      * [中介者模式]()  
       * [未完待续....]()  
 
 
