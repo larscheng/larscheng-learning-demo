@@ -33,8 +33,8 @@
       * [中介者模式](Design-Patterns/src/main/java/behavioralmodel/mediatormode/README.md)    
       * [迭代器模式](Design-Patterns/src/main/java/behavioralmodel/iteratormode/README.md)    
       * [访问者模式](Design-Patterns/src/main/java/behavioralmodel/visitormode/README.md)    
-      * [解释器模式]()    
-      * [备忘录模式]()    
+      * [备忘录模式](Design-Patterns/src/main/java/behavioralmodel/mementomode/README.md)    
+      * [解释器模式](Design-Patterns/src/main/java/behavioralmodel/interpretermode/README.md)    
 
 
 ## Nacos
