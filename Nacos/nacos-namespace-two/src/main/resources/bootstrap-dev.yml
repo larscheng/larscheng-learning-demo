@@ -1,0 +1,32 @@
+server:
+  port: 9921
+
+spring:
+  application:
+    name: nacos-namespace-two
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+#        方案1:NamespaceID\Group
+#        namespace: edbd013b-b178-44f7-8caa-e73071e49c4d
+#        group: namespace-two
+
+
+#        方案2:NamespaceID\Group
+        namespace: 461fa015-dfba-43f6-a52d-7c6209c4c5aa
+        group: namespace-two-dev
+      config:
+        server-addr: 127.0.0.1:8848
+        prefix: ${spring.application.name}
+        file-extension: yml
+#        方案1:NamespaceID\Group
+#        namespace: edbd013b-b178-44f7-8caa-e73071e49c4d
+#        group: namespace-two
+
+
+#        方案2:NamespaceID\Group
+        namespace: 461fa015-dfba-43f6-a52d-7c6209c4c5aa
+        group: namespace-two-dev
