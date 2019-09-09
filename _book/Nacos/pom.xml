@@ -15,6 +15,10 @@
         <module>nacos-provide</module>
         <module>nacos-consumer</module>
         <module>nacos-feign</module>
+        <module>nacos-config</module>
+        <module>nacos-config-share</module>
+        <module>nacos-namespace-one</module>
+        <module>nacos-namespace-two</module>
     </modules>
 
     <artifactId>Nacos</artifactId>
@@ -27,12 +31,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -68,6 +66,8 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 

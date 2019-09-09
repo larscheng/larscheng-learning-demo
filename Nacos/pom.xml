@@ -16,6 +16,7 @@
         <module>nacos-consumer</module>
         <module>nacos-feign</module>
         <module>nacos-config</module>
+        <module>nacos-config-share</module>
         <module>nacos-namespace-one</module>
         <module>nacos-namespace-two</module>
     </modules>
@@ -65,6 +66,8 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 
