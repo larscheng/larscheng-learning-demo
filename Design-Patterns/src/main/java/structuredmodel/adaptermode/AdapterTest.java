@@ -3,7 +3,7 @@ package structuredmodel.adaptermode;
 /**
  * 描述: 类适配器
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/3 10:41
  */
 public class AdapterTest {

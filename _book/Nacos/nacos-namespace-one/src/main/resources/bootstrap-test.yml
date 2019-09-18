@@ -1,0 +1,31 @@
+server:
+  port: 9912
+
+spring:
+  application:
+    name: nacos-namespace-one
+  profiles:
+    active: test
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+#        方案1:NamespaceID\Group
+#        namespace: 0133bd1e-25c3-4985-96ed-a4e34efdea2e
+#        group: namespace-one
+
+#        方案2:NamespaceID\Group
+        namespace: e0d75068-a12c-4314-9296-3f396139d5b3
+        group: namespace-one-test
+      config:
+        server-addr: 127.0.0.1:8848
+        prefix: ${spring.application.name}
+        file-extension: yml
+#        方案1:NamespaceID\Group
+#        namespace: 0133bd1e-25c3-4985-96ed-a4e34efdea2e
+#        group: namespace-one
+
+
+#        方案2:NamespaceID\Group
+        namespace: e0d75068-a12c-4314-9296-3f396139d5b3
+        group: namespace-one-test

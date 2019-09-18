@@ -3,7 +3,7 @@ package structuredmodel.proxymode;
 /**
  * 描述: 经销商：代理类(静态代理)
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/1 18:52
  */
 public class ProxyVehicleCompany implements VehicleCompany {

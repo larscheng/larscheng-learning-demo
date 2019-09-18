@@ -4,7 +4,7 @@ package structuredmodel.bridgemode;
  * 描述:
  * 桥接模式
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/3 15:05
  */
 public class BridgeTest {

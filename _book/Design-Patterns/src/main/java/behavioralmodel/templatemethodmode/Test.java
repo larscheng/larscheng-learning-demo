@@ -11,7 +11,7 @@ package behavioralmodel.templatemethodmode;
  坐火车回家：具体类
  坐高铁回家：具体类
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/10 10:54
  */
 public class Test {

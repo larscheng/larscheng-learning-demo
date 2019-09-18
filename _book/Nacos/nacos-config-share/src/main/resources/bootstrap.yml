@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: nacos-config-share
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        prefix: ${spring.application.name}
+        file-extension: yml
+        shared-dataids: shareconfig1.yml,shareconfig2.yml
+        refreshable-dataids: shareconfig1.yml,shareconfig2.yml
+        ext-config:
+          - data-id: shareconfig3.yml
+            group: SHARE3_GROUP
+            refresh: true
+          - data-id: shareconfig4.yml
+            group: SHARE4_GROUP
+            refresh: true
+
+
+
+

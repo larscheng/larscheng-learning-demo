@@ -11,6 +11,7 @@
         <module>Nacos</module>
         <module>RabbitMQ</module>
         <module>Sortings</module>
+        <module>Others</module>
     </modules>
 
 

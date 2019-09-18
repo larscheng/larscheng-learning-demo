@@ -4,7 +4,7 @@ package createdmodel.simplefactorymode;
  * 描述:
  * 电动车
  *
- * @author zhengql
+ * @author lars
  * @date 2019/6/18 15:00
  */
 public class ElectricVehicle implements Vehicle {

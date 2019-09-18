@@ -6,7 +6,7 @@ import createdmodel.simplefactorymode.Vehicle;
  * 描述:
  * 汽油车
  *
- * @author zhengql
+ * @author lars
  * @date 2019/6/18 15:00
  */
 public class PetrolVehicle implements Vehicle {

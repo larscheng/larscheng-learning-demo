@@ -4,7 +4,7 @@ package structuredmodel.decoratormode;
  * 描述:
  * 装饰模式
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/3 17:43
  */
 public class DecoratorTest {

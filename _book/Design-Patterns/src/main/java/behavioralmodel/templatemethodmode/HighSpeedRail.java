@@ -3,7 +3,7 @@ package behavioralmodel.templatemethodmode;
 /**
  * 描述:
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/10 10:57
  */
 public class HighSpeedRail extends SpringBackHome {

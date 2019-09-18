@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: nacos-config
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.16.10.166
+      config:
+        server-addr: 10.16.10.166
+        prefix: ${spring.application.name}
+        file-extension: yml
+        # namespace: edbd013b-b178-44f7-8caa-e73071e49c4d
+        # group: DEV_GROUP

@@ -3,7 +3,7 @@ package behavioralmodel.templatemethodmode;
 /**
  * 描述:模板方法模式
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/10 10:16
  */
 public class TemplateModeTest {

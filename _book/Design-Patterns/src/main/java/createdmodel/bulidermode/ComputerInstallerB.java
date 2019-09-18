@@ -4,7 +4,7 @@ package createdmodel.bulidermode;
  * 描述:
  * 具体建造者装机员B
  *
- * @author zhengql
+ * @author lars
  * @date 2019/6/26 14:51
  */
 public class ComputerInstallerB extends AbstractBuilder{

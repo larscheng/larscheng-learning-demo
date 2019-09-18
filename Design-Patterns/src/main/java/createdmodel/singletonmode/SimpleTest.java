@@ -3,7 +3,7 @@ package createdmodel.singletonmode;
 /**
  * 描述:
  *
- * @author zhengql
+ * @author lars
  * @date 2019/6/28 11:53
  */
 public class SimpleTest {

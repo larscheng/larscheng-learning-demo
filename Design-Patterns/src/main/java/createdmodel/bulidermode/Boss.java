@@ -4,7 +4,7 @@ package createdmodel.bulidermode;
  * 描述:
  * 指挥者-装机店老板
  *
- * @author zhengql
+ * @author lars
  * @date 2019/6/26 14:58
  */
 public class Boss {

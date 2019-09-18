@@ -3,7 +3,7 @@ package createdmodel.bulidermode;
 /**
  * 描述:
  * 抽象建造者
- * @author zhengql
+ * @author lars
  * @date 2019/6/26 14:47
  */
 public  abstract class AbstractBuilder {

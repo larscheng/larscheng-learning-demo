@@ -14,7 +14,7 @@ import java.util.concurrent.TimeoutException;
  * 描述:
  * 消息接收者
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/24 13:23
  */
 @Slf4j
@@ -29,8 +29,10 @@ public class Worker {
         Channel channel = connection.createChannel();
         //声明队列，主要为了防止消息接收者先运行此程序，队列还不存在时创建队列。
         channel.queueDeclare(TASK_QUEUE_NAME, true, false, false, null);
+        //同一时刻服务器只会发送一条消息给消费者
         channel.basicQos(1);
         System.out.println("接收消息中........");
+
         DeliverCallback deliverCallback = (consumerTag,delivery) ->{
             String msg = new String(delivery.getBody(),"UTF-8");
             log.info("工作者：{} 从队列：{} 中收到消息：{}",Thread.currentThread().getName(),TASK_QUEUE_NAME,msg);

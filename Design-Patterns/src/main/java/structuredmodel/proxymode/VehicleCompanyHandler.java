@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
  * 描述:
  * 动态代理处理器
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/2 09:15
  */
 public class VehicleCompanyHandler implements InvocationHandler {

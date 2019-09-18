@@ -3,7 +3,7 @@ package behavioralmodel.strategymode;
 /**
  * 描述:
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/10 11:50
  */
 public class StrategyModeTest {

@@ -5,7 +5,7 @@ import java.util.HashMap;
 /**
  * 描述: 享元模式
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/5 15:40
  */
 public class FlyWightTest {

@@ -1,0 +1,910 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>希尔排序 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../InsertionSort/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../../../../../">
+            
+                <a href="../../../../../../../../">
+            
+                    
+                    说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../../../../../../../Design-Patterns/">
+            
+                <a href="../../../../../../../../Design-Patterns/">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" >
+            
+                <span>
+            
+                    
+                    创建型模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" >
+            
+                <span>
+            
+                    
+                    简单工厂模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" >
+            
+                <span>
+            
+                    
+                    工厂方法模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../../../../../../../../Design-Patterns/src/main/java/createdmodel/abstractfactorymode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/createdmodel/abstractfactorymode/">
+            
+                    
+                    抽象工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../../../../../../../../Design-Patterns/src/main/java/createdmodel/bulidermode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/createdmodel/bulidermode/">
+            
+                    
+                    建造者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="../../../../../../../../Design-Patterns/src/main/java/createdmodel/prototypemode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/createdmodel/prototypemode/">
+            
+                    
+                    原型模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6" data-path="../../../../../../../../Design-Patterns/src/main/java/createdmodel/singletonmode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/createdmodel/singletonmode/">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/">
+            
+                    
+                    结构型模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/proxymode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/proxymode/">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/adaptermode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/adaptermode/">
+            
+                    
+                    适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/bridgemode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/bridgemode/">
+            
+                    
+                    桥接模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/decoratormode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/decoratormode/">
+            
+                    
+                    装饰模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/facademode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/facademode/">
+            
+                    
+                    外观模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.6" data-path="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/flyweightmode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/flyweightmode/">
+            
+                    
+                    享元模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.7" data-path="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/compositemode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/structuredmodel/compositemode/">
+            
+                    
+                    组合模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/">
+            
+                    
+                    行为型模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/templatemethodmode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/templatemethodmode/">
+            
+                    
+                    模板方法模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/strategymode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/strategymode/">
+            
+                    
+                    策略模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/commandmode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/commandmode/">
+            
+                    
+                    命令模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/chainofresponsibility/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/chainofresponsibility/">
+            
+                    
+                    责任链模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" data-path="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/statemode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/statemode/">
+            
+                    
+                    状态模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" data-path="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/observermode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/observermode/">
+            
+                    
+                    观察者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" data-path="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/mediatormode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/mediatormode/">
+            
+                    
+                    中介者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.8" data-path="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/iteratormode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/iteratormode/">
+            
+                    
+                    迭代器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.9" data-path="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/visitormode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/visitormode/">
+            
+                    
+                    访问者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.10" data-path="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/mementomode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/mementomode/">
+            
+                    
+                    备忘录模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11" data-path="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/interpretermode/">
+            
+                <a href="../../../../../../../../Design-Patterns/src/main/java/behavioralmodel/interpretermode/">
+            
+                    
+                    解释器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../../../../../../../Nacos/">
+            
+                <a href="../../../../../../../../Nacos/">
+            
+                    
+                    Nacos
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../../../../../../../Nacos/Nacos-Introduction.html">
+            
+                <a href="../../../../../../../../Nacos/Nacos-Introduction.html">
+            
+                    
+                    Nacos介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../../../../../../../Nacos/Nacos-Registration.html">
+            
+                <a href="../../../../../../../../Nacos/Nacos-Registration.html">
+            
+                    
+                    Nacos注册中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../../../../../../../Nacos/Nacos-OpenFeign.html">
+            
+                <a href="../../../../../../../../Nacos/Nacos-OpenFeign.html">
+            
+                    
+                    Nacos+OpenFeign
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../../../../../../">
+            
+                <a href="../../../../../../../">
+            
+                    
+                    排序算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../InsertionSort/">
+            
+                <a href="../InsertionSort/">
+            
+                    
+                    插入排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    希尔排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" >
+            
+                <span>
+            
+                    
+                    选择排序
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" >
+            
+                <span>
+            
+                    
+                    堆排序
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" >
+            
+                <span>
+            
+                    
+                    希尔排序
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../../../../../.." >希尔排序</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <blockquote>
+<p><a href="https://www.larscheng.com/others/allsort/" target="_blank">&#x2764;&#x67E5;&#x770B;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x52A8;&#x6001;&#x6F14;&#x793A;&#x2764;&#x67E5;&#x770B;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x52A8;&#x6001;&#x6F14;&#x793A;&#x2764;&#x67E5;&#x770B;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x52A8;&#x6001;&#x6F14;&#x793A;</a></p>
+</blockquote>
+<h1 id="&#x5E0C;&#x5C14;&#x6392;&#x5E8F;-&#xFF08;shell-sort&#xFF09;">&#x5E0C;&#x5C14;&#x6392;&#x5E8F; &#xFF08;Shell Sort&#xFF09;</h1>
+<p>&#x5E0C;&#x5C14;&#x6392;&#x5E8F; &#x4E5F;&#x79F0;&#x505A;<code>&#x9012;&#x51CF;&#x589E;&#x91CF;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;</code>&#xFF0C;1959&#x5E74;<code>Shell</code>&#x53D1;&#x660E;&#xFF0C;&#x662F;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x7684;&#x4E00;&#x79CD;<code>&#x9AD8;&#x901F;&#x800C;&#x7A33;&#x5B9A;</code>&#x7684;&#x6539;&#x8FDB;&#x7248;&#x672C;</p>
+<h1 id="&#x57FA;&#x672C;&#x601D;&#x60F3;">&#x57FA;&#x672C;&#x601D;&#x60F3;</h1>
+<p>&#x5E0C;&#x5C14;&#x6392;&#x5E8F;&#x662F;&#x5148;&#x5C06;&#x6574;&#x4E2A;&#x5F85;&#x6392;&#x5E8F;&#x7684;&#x8BB0;&#x5F55;&#x5E8F;&#x5217;&#x5206;&#x5272;&#x6210;&#x82E5;&#x5E72;&#x4E2A;&#x5B50;&#x5E8F;&#x5217;&#x5206;&#x522B;&#x8FDB;&#x884C;&#x76F4;&#x63A5;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#xFF0C;&#x5F85;&#x6574;&#x4E2A;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x8BB0;&#x5F55;&#x201C;&#x57FA;&#x672C;&#x6709;&#x5E8F;&#x201D;&#x65F6;&#xFF0C;&#x5728;&#x5BF9;&#x5168;&#x4F53;&#x8BB0;&#x5F55;&#x8FDB;&#x884C;&#x4F9D;&#x6B21;&#x76F4;&#x63A5;&#x6392;&#x5E8F;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/larscheng/myImg/blogImg/sort/20190906110507.png" alt=""></p>
+<p>&#x4F8B;&#x5982;&#x4E0A;&#x56FE;&#x4E2D;&#x7684;&#x5F85;&#x6392;&#x5E8F;&#x6570;&#x7EC4;&#xFF1A;[49,38,65,97,76,13,27,49,55,4]</p>
+<ol>
+<li>&#x5C06;&#x6570;&#x7EC4;&#x6309;<code>5&#x4E2A;&#x95F4;&#x9694;</code>&#x4E3A;&#x4E00;&#x7EC4;&#x5212;&#x5206;&#x6210;<code>5&#x7EC4;&#x5B50;&#x5E8F;&#x5217;</code>,&#x6BCF;&#x4E2A;&#x5B50;&#x5E8F;&#x5217;&#x8FDB;&#x884C;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x540E;&#xFF0C;&#x5404;&#x4E2A;&#x5B50;&#x5E8F;&#x5217;&#x5C31;&#x53D8;&#x6210;&#x4E86;&#x6709;&#x5E8F;&#x7684;&#x4E86;&#xFF08;&#x6574;&#x4F53;&#x4E0D;&#x4E00;&#x5B9A;&#x6709;&#x5E8F;&#xFF09;</li>
+<li>&#x5C06;&#x4E0A;&#x4E00;&#x6B65;&#x5F97;&#x5230;&#x7684;&#x6570;&#x7EC4;&#x6309;<code>2&#x4E2A;&#x95F4;&#x9694;</code>&#x4E3A;&#x4E00;&#x7EC4;&#x5212;&#x5206;&#x6210;<code>3&#x7EC4;&#x5B50;&#x5E8F;&#x5217;</code>&#xFF0C;&#x5404;&#x4E2A;&#x5B50;&#x5E8F;&#x5217;&#x8FDB;&#x884C;&#x63D2;&#x5165;&#x6392;&#x5E8F;</li>
+<li>&#x5C06;&#x4E0A;&#x4E00;&#x6B65;&#x5F97;&#x5230;&#x7684;&#x6570;&#x7EC4;&#x6309;&#x6B63;&#x5E38;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#xFF0C;&#x6B64;&#x65F6;&#x5E8F;&#x5217;&#x57FA;&#x672C;&#x6709;&#x5E8F;&#xFF0C;&#x6240;&#x4EE5;&#x6548;&#x7387;&#x8F83;&#x9AD8;
+e
+&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&#x95F4;&#x9694;&#x53EF;&#x4EE5;&#x79F0;&#x4F5C;&#x589E;&#x91CF;, &#x4E00;&#x822C;&#x521D;&#x59CB;&#x589E;&#x91CF;&#x53D6;&#x6570;&#x7EC4;&#x7684;&#x4E00;&#x534A;&#x957F;&#x5EA6;, &#x6BCF;&#x8F6E;&#x6392;&#x5E8F;&#x540E;&#xFF0C;&#x589E;&#x91CF;&#x51CF;&#x534A;&#xFF0C;&#x76F4;&#x81F3;&#x589E;&#x91CF;&#x4E3A;1(&#x5B58;&#x5728;&#x591A;&#x79CD;&#x589E;&#x91CF;&#x5E8F;&#x5217;)</li>
+</ol>
+<h1 id="&#x7B97;&#x6CD5;&#x63CF;&#x8FF0;">&#x7B97;&#x6CD5;&#x63CF;&#x8FF0;</h1>
+<ol>
+<li>&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x589E;&#x91CF;&#x5E8F;&#x5217;t1&#xFF0C;t2&#xFF0C;&#x2026;&#xFF0C;tk&#xFF0C;&#x5176;&#x4E2D;t1&gt;t2&#xFF0C;tk=1&#xFF1B;&#xFF08;&#x4E00;&#x822C;&#x521D;&#x6B21;&#x53D6;&#x6570;&#x7EC4;&#x534A;&#x957F;&#xFF0C;&#x4E4B;&#x540E;&#x6BCF;&#x6B21;&#x518D;&#x51CF;&#x534A;&#xFF0C;&#x76F4;&#x5230;&#x589E;&#x91CF;&#x4E3A;1&#xFF09;</li>
+<li>&#x6309;&#x589E;&#x91CF;&#x5E8F;&#x5217;&#x4E2A;&#x6570;k&#xFF0C;&#x5BF9;&#x5E8F;&#x5217;&#x8FDB;&#x884C;k &#x8D9F;&#x6392;&#x5E8F;&#xFF1B;</li>
+<li>&#x6BCF;&#x8D9F;&#x6392;&#x5E8F;&#xFF0C;&#x6839;&#x636E;&#x5BF9;&#x5E94;&#x7684;&#x589E;&#x91CF;ti&#xFF0C;&#x5C06;&#x5F85;&#x6392;&#x5E8F;&#x5217;&#x5206;&#x5272;&#x6210;&#x82E5;&#x5E72;&#x957F;&#x5EA6;&#x4E3A;m &#x7684;&#x5B50;&#x5E8F;&#x5217;&#xFF0C;&#x5206;&#x522B;&#x5BF9;&#x5404;&#x5B50;&#x8868;&#x8FDB;&#x884C;&#x76F4;&#x63A5;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x3002;&#x4EC5;&#x589E;&#x91CF;&#x56E0;&#x5B50;&#x4E3A;1 &#x65F6;&#xFF0C;&#x6574;&#x4E2A;&#x5E8F;&#x5217;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x8868;&#x6765;&#x5904;&#x7406;&#xFF0C;&#x8868;&#x957F;&#x5EA6;&#x5373;&#x4E3A;&#x6574;&#x4E2A;&#x5E8F;&#x5217;&#x7684;&#x957F;&#x5EA6;&#x3002;</li>
+</ol>
+<p>&#x5982;&#x4E0B;&#x56FE;&#xFF0C;&#x5176;&#x4E2D;H&#x8868;&#x793A;&#x589E;&#x91CF;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/larscheng/myImg/blogImg/sort/shellsort.gif" alt="&#x5E0C;&#x5C14;&#x6392;&#x5E8F;&#x52A8;&#x56FE;--&#x6765;&#x6E90;[&#x5D14;&#x663E;&#x9F99;](https://blog.csdn.net/cuixianlong/article/details/77929142)"></p>
+<h1 id="java&#x4EE3;&#x7801;&#x5B9E;&#x73B0;">Java&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</h1>
+<pre><code class="lang-java">
+<span class="hljs-keyword">import</span> java.util.Arrays;
+
+<span class="hljs-comment">/**
+ * &#x63CF;&#x8FF0;:
+ *
+ * <span class="hljs-doctag">@author</span> lars
+ * <span class="hljs-doctag">@date</span> 2019/9/6 11:35
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ShellSort</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-keyword">int</span>[] arr = {<span class="hljs-number">49</span>, <span class="hljs-number">38</span>, <span class="hljs-number">65</span>, <span class="hljs-number">97</span>, <span class="hljs-number">76</span>, <span class="hljs-number">13</span>, <span class="hljs-number">27</span>, <span class="hljs-number">49</span>, <span class="hljs-number">55</span>, <span class="hljs-number">4</span>};
+        System.out.println(<span class="hljs-string">&quot;&#x6392;&#x5E8F;&#x524D;:&quot;</span>+Arrays.toString(arr));
+
+        <span class="hljs-keyword">int</span>[] a = Arrays.copyOf(arr,arr.length);
+        shellsort1(a);
+
+        <span class="hljs-keyword">int</span>[] b = Arrays.copyOf(arr,arr.length);
+
+        shellsort2(arr);
+
+
+    }
+
+    <span class="hljs-comment">/**
+     * &#x5E0C;&#x5C14;&#x6392;&#x5E8F;&#xFF08;Wiki&#x5B98;&#x65B9;&#x7248;&#xFF09;
+     *
+     * 1. &#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x589E;&#x91CF;&#x5E8F;&#x5217;t1&#xFF0C;t2&#xFF0C;&#x2026;&#xFF0C;tk&#xFF0C;&#x5176;&#x4E2D;ti&gt;tj&#xFF0C;tk=1&#xFF1B;&#xFF08;&#x6CE8;&#x610F;&#x6B64;&#x7B97;&#x6CD5;&#x7684;gap&#x53D6;&#x503C;&#xFF09;
+     * 2. &#x6309;&#x589E;&#x91CF;&#x5E8F;&#x5217;&#x4E2A;&#x6570;k&#xFF0C;&#x5BF9;&#x5E8F;&#x5217;&#x8FDB;&#x884C;k &#x8D9F;&#x6392;&#x5E8F;&#xFF1B;
+     * 3. &#x6BCF;&#x8D9F;&#x6392;&#x5E8F;&#xFF0C;&#x6839;&#x636E;&#x5BF9;&#x5E94;&#x7684;&#x589E;&#x91CF;ti&#xFF0C;&#x5C06;&#x5F85;&#x6392;&#x5E8F;&#x5217;&#x5206;&#x5272;&#x6210;&#x82E5;&#x5E72;&#x957F;&#x5EA6;&#x4E3A;m &#x7684;&#x5B50;&#x5E8F;&#x5217;&#xFF0C;&#x5206;&#x522B;&#x5BF9;&#x5404;&#x5B50;&#x8868;&#x8FDB;&#x884C;&#x76F4;&#x63A5;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x3002;
+     *    &#x4EC5;&#x589E;&#x91CF;&#x56E0;&#x5B50;&#x4E3A;1 &#x65F6;&#xFF0C;&#x6574;&#x4E2A;&#x5E8F;&#x5217;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x8868;&#x6765;&#x5904;&#x7406;&#xFF0C;&#x8868;&#x957F;&#x5EA6;&#x5373;&#x4E3A;&#x6574;&#x4E2A;&#x5E8F;&#x5217;&#x7684;&#x957F;&#x5EA6;&#x3002;
+     * <span class="hljs-doctag">@param</span> arr  &#x5F85;&#x6392;&#x5E8F;&#x6570;&#x7EC4;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">shellsort2</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] arr)</span> </span>{
+        <span class="hljs-keyword">int</span> gap = <span class="hljs-number">1</span>, i, j, len = arr.length;
+        <span class="hljs-keyword">int</span> temp;
+        <span class="hljs-keyword">while</span> (gap &lt; len / <span class="hljs-number">3</span>){
+            <span class="hljs-comment">// &lt;O(n^(3/2)) by Knuth,1973&gt;: 1, 4, 13, 40, 121, ...</span>
+            gap = gap * <span class="hljs-number">3</span> + <span class="hljs-number">1</span>;      
+        }
+        <span class="hljs-keyword">for</span> (; gap &gt; <span class="hljs-number">0</span>; gap /= <span class="hljs-number">3</span>) {
+            <span class="hljs-keyword">for</span> (i = gap; i &lt; len; i++) {
+                temp = arr[i];
+                <span class="hljs-keyword">for</span> (j = i - gap; j &gt;= <span class="hljs-number">0</span> &amp;&amp; arr[j] &gt; temp; j -= gap){
+                    arr[j + gap] = arr[j];
+                }
+                arr[j + gap] = temp;
+            }
+        }
+
+        System.out.println(<span class="hljs-string">&quot;&#x6392;&#x5E8F;&#x540E;:&quot;</span>+Arrays.toString(arr));
+    }
+
+
+    <span class="hljs-comment">/***
+     * &#x4E2A;&#x4EBA;&#x5B9E;&#x73B0;
+     * <span class="hljs-doctag">@param</span> arr
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">shellsort1</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] arr)</span> </span>{
+        <span class="hljs-comment">//&#x6839;&#x636E;&#x589E;&#x91CF;g&#x8FDB;&#x884C;&#x5206;&#x7EC4;,g&#x521D;&#x59CB;&#x72B6;&#x6001;&#x4E3A;&#x6570;&#x7EC4;&#x957F;&#x5EA6;&#x4E00;&#x534A;</span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> g = arr.length / <span class="hljs-number">2</span>; g &gt; <span class="hljs-number">0</span>; g /= <span class="hljs-number">2</span>) {
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = g; i &lt; arr.length; i++) {
+                <span class="hljs-comment">//&#x5F85;&#x63D2;&#x5165;&#x6570;&#x4E3A;arr[i]</span>
+                <span class="hljs-keyword">int</span> inserted = arr[i];
+                <span class="hljs-keyword">int</span> j;
+                <span class="hljs-comment">//&#x5F85;&#x63D2;&#x5165;&#x6570;&#xFF0C;&#x4E0E;&#x5F53;&#x524D;&#x7EC4;&#x5185;&#x7684;&#x5E8F;&#x5217;&#x8FDB;&#x884C;&#x4F9D;&#x6B21;&#x6BD4;&#x8F83;</span>
+                <span class="hljs-keyword">for</span> (j = i - g; j &gt;= <span class="hljs-number">0</span> &amp;&amp; inserted &lt; arr[j]; j -= g) {
+                    <span class="hljs-comment">//&#x5F85;&#x63D2;&#x5165;&#x6570;&#x5C0F;&#x4E8E;&#x4ED6;&#x524D;&#x9762;&#x7684;&#x6570;&#xFF0C;&#x8FDB;&#x884C;&#x4EA4;&#x6362;</span>
+                    arr[j + g] = arr[j];
+                }
+                arr[j + g] = inserted;
+            }
+        }
+        System.out.println(<span class="hljs-string">&quot;&#x6392;&#x5E8F;&#x540E;:&quot;</span>+Arrays.toString(arr));
+    }
+}
+</code></pre>
+<h1 id="&#x590D;&#x6742;&#x5EA6;">&#x590D;&#x6742;&#x5EA6;</h1>
+<p>&#x5E0C;&#x5C14;&#x6392;&#x5E8F;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x4E0E;&#x589E;&#x91CF;&#x6709;&#x5173;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x589E;&#x91CF;&#x4F1A;&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x7684;&#x590D;&#x6742;&#x5EA6;</p>
+<p>&#x50CF;&#x6211;&#x4EEC;&#x601D;&#x8DEF;&#x5206;&#x6790;&#x4E2D;&#x7684;&#x6570;&#x7EC4;&#x5BF9;&#x534A;&#x53D6;&#x503C;&#x4E3A;&#x589E;&#x91CF;5&#xFF0C;&#x76F4;&#x81F3;&#x4E3A;1&#xFF0C;&#x5176;&#x5B9E;&#x5E76;&#x4E0D;&#x662F;&#x6700;&#x4F18;&#x589E;&#x91CF;&#x5E8F;&#x5217;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5E73;&#x5747;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</th>
+<th>&#x6700;&#x597D;&#x60C5;&#x51B5;</th>
+<th>&#x6700;&#x574F;&#x60C5;&#x51B5;</th>
+<th>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O(n^1.25)</td>
+<td>O(n)</td>
+<td>O(n&#xB2;)</td>
+<td>O(1)</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../InsertionSort/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 插入排序">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"希尔排序","level":"4.1.2","depth":2,"next":{"title":"选择排序","level":"4.1.3","depth":2,"ref":"","articles":[]},"previous":{"title":"插入排序","level":"4.1.1","depth":2,"path":"Sortings/src/main/java/com/larscheng/www/InsertionSort/README.md","ref":"Sortings/src/main/java/com/larscheng/www/InsertionSort/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","livereload"],"pluginsConfig":{"expandable-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Sortings/src/main/java/com/larscheng/www/shellSort/README.md","mtime":"2019-09-09T07:20:30.399Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-09T07:20:35.937Z"},"basePath":"../../../../../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../../../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

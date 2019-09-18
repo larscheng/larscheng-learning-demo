@@ -10,7 +10,7 @@ package structuredmodel.adaptermode;
  *
  * 比如说现在有两个功能是相类似的，扫码租车，上锁还车
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/3 11:24
  */
 public class Test {

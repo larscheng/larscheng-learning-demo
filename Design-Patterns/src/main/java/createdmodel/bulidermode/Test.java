@@ -9,7 +9,7 @@ package createdmodel.bulidermode;
  * 实际的流程是客户提出机器需求，装机店老板给出配置A和B两个套餐和价位，客户下单，老板根据配置单A/B指挥装机员A/B进行装机，装机员装好机器之后，由装机店老板转交客户
  *
  * 其中电脑为产品、装机店老板为指挥者、装机员为具体建造者。
- * @author zhengql
+ * @author lars
  * @date 2019/6/26 15:09
  */
 public class Test {

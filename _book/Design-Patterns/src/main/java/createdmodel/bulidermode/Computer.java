@@ -4,7 +4,7 @@ package createdmodel.bulidermode;
  * 描述:
  * 电脑产品
  *
- * @author zhengql
+ * @author lars
  * @date 2019/6/26 14:41
  */
 public class Computer {

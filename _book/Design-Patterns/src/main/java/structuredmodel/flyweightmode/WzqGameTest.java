@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * 描述:
  * 五子棋围棋模拟场景：享元模式
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/8 10:46
  */
 public class WzqGameTest {

@@ -4,7 +4,7 @@ package createdmodel.simplefactorymode;
  * 描述:
  * 助力车
  *
- * @author zhengql
+ * @author lars
  * @date 2019/6/18 14:53
  */
 public class PowerVehicle implements Vehicle {

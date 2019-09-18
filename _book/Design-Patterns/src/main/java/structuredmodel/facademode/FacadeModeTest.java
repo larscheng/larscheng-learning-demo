@@ -3,7 +3,7 @@ package structuredmodel.facademode;
 /**
  * 描述:外观模式demo
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/4 13:50
  */
 public class FacadeModeTest {

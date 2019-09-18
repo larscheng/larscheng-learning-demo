@@ -4,7 +4,7 @@ package createdmodel.abstractfactorymode;
  * 描述:
  * 电动车配件
  *
- * @author zhengql
+ * @author lars
  * @date 2019/6/26 11:27
  */
 public class ElecFitting implements Fitting {

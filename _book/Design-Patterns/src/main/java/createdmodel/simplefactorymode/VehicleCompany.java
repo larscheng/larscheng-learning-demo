@@ -4,7 +4,7 @@ package createdmodel.simplefactorymode;
  * 描述:
  * 汽车公司
  *
- * @author zhengql
+ * @author lars
  * @date 2019/6/18 14:47
  */
 public class VehicleCompany {

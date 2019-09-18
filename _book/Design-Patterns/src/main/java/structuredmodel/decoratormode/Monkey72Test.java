@@ -4,7 +4,7 @@ package structuredmodel.decoratormode;
  * 描述:
  * 72变
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/4 10:27
  */
 public class Monkey72Test {

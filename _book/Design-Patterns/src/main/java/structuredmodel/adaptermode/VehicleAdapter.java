@@ -3,7 +3,7 @@ package structuredmodel.adaptermode;
 /**
  * 描述: 2期租车功能适配器
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/3 11:20
  */
 public class VehicleAdapter implements Vehicle1to2{

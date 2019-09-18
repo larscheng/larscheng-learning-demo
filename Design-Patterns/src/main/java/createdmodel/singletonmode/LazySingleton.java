@@ -8,7 +8,7 @@ package createdmodel.singletonmode;
  * 线程不安全
  * 保证线程安全：volatile、synchronized,但是每次访问都会同步、耗性能
  *
- * @author zhengql
+ * @author lars
  * @date 2019/6/28 11:41
  */
 public class LazySingleton {

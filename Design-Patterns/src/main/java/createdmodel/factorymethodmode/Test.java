@@ -9,7 +9,7 @@ import createdmodel.simplefactorymode.Vehicle;
  * 此时可以用另一种方案：工厂方法模式
  * 汽车公司下属两个子公司，一个生产旧款车，一个生产新款车。总店只接收客户订单,当有客户来订车，告知他想要的款式和车型号码后，下属的子公司开始生产。
  *
- * @author zhengql
+ * @author lars
  * @date 2019/6/18 16:47
  */
 public class Test {

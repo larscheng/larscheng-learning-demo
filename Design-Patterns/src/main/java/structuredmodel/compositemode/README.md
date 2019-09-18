@@ -51,7 +51,7 @@ eg：一个公司的的组织建构就是典型的组合模式，对外是一个
  *            leaf2   leaf3
  * 透明式组合模式
  *
- * @author zhengql
+ * @author lars
  * @date 2019/7/8 14:32
  */
 public class CompositeModeTest1 {

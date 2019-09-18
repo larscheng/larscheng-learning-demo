@@ -7,7 +7,7 @@ import createdmodel.simplefactorymode.Vehicle;
 /**
  * 描述:
  *
- * @author zhengql
+ * @author lars
  * @date 2019/6/18 16:46
  */
 public class NewVehicelFactory implements VehicleCenterCompany {

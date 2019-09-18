@@ -6,7 +6,7 @@ import createdmodel.simplefactorymode.Vehicle;
 /**
  * 描述:
  * 汽油车厂
- * @author zhengql
+ * @author lars
  * @date 2019/6/26 11:36
  */
 public class PetrolFactory implements AbstractFactory{
