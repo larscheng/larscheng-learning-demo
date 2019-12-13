@@ -13,6 +13,7 @@ public class ElectricVehicle implements Vehicle {
         info();
     }
 
+    @Override
     public void info() {
         System.out.println("感谢您购买xx牌电动车!!!");
     }

@@ -1,0 +1,7 @@
+FROM adoptopenjdk/openjdk8
+WORKDIR /usr/src/
+ADD target/springboot-docker.jar /usr/src/
+CMD ["java", "-jar", "springboot-docker.jar"]
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+ENV LANG C.UTF-8
+EXPOSE 7788

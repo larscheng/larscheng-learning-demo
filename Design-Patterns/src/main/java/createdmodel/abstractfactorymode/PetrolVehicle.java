@@ -14,6 +14,7 @@ public class PetrolVehicle implements Vehicle {
         info();
     }
 
+    @Override
     public void info() {
         System.out.println("感谢您购买xx牌汽油车!!!");
     }
