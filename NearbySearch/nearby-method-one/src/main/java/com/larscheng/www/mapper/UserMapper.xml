@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.larscheng.www.dao.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.larscheng.www.domain.User">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="longitude" property="longitude"/>
+        <result column="latitude" property="latitude"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, longitude, latitude, create_time
+    </sql>
+
+    <select id="selectUser" resultMap="BaseResultMap">
+        SELECT * FROM user
+        WHERE 1=1
+        and (longitude BETWEEN ${minlng} AND ${maxlng})
+        and (latitude BETWEEN ${minlat} AND ${maxlat})
+    </select>
+</mapper>
