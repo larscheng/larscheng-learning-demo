@@ -1,0 +1,1 @@
+## Springboot集成rabbitmq实现简单的消息收发demo

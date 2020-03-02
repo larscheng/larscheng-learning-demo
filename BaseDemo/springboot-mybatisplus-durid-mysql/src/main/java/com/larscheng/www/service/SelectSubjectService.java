@@ -13,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface SelectSubjectService extends IService<SelectSubject> {
 
+    String addTest();
 }

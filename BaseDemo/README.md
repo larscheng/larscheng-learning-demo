@@ -6,3 +6,5 @@
 - springboot-docker：springboot项目打包构建镜像到docker
 - springboot-mongodb：springboot集成mongoDB
 - springboot-mybatisplus-durid-mysql：springboot集成mybatisplus、druid、mysql
+- springboot-rabbitmq-demo：springboot集成rabbitmq
+- springboot-rabbitmq-delay-demo：springboot集成rabbitmq实现延时队列

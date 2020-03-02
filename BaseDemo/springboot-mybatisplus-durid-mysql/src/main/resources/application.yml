@@ -5,7 +5,7 @@ spring:
   application:
     name: nearby-method-one
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf8&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf8&serverTimezone=CTT
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver

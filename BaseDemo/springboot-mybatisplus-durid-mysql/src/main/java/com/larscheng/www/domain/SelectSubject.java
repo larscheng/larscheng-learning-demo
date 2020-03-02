@@ -4,8 +4,12 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import java.util.Date;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.experimental.Accessors;
 
 /**
@@ -16,7 +20,8 @@ import lombok.experimental.Accessors;
  * @author larscheng
  * @since 2019-12-06
  */
-@Data
+@Getter
+@Setter
   @EqualsAndHashCode(callSuper = false)
   @Accessors(chain = true)
 public class SelectSubject implements Serializable {
@@ -107,12 +112,12 @@ public class SelectSubject implements Serializable {
       /**
      * 创建时间
      */
-      private LocalDateTime gmtCreate;
+      private Date gmtCreate;
 
       /**
      * 修改时间
      */
-      private LocalDateTime gmtModify;
+      private Date gmtModify;
 
       /**
      * 用户骑行卡id

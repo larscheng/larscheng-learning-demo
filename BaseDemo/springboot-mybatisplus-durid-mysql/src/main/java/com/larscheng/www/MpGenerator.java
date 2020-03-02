@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
 import com.baomidou.mybatisplus.generator.config.GlobalConfig;
 import com.baomidou.mybatisplus.generator.config.PackageConfig;
 import com.baomidou.mybatisplus.generator.config.StrategyConfig;
+import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
 /**
@@ -40,6 +41,7 @@ public class MpGenerator {
         gc.setXmlName("%sMapper");
         gc.setAuthor("larscheng");
         gc.setIdType(IdType.AUTO);
+        gc.setDateType(DateType.ONLY_DATE);
         mpg.setGlobalConfig(gc);
 
         //数据源配置
@@ -54,7 +56,7 @@ public class MpGenerator {
         //策略配置
         StrategyConfig sc = new StrategyConfig()
                 /**表名*/
-                .setInclude("select_subject")
+                .setInclude("lease_region_info")
                 //表名前缀
                 //.setTablePrefix("tab_")
                 //表名生成策略
