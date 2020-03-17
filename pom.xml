@@ -15,6 +15,7 @@
         <module>Memcache</module>
         <module>NearbySearch</module>
         <module>BaseDemo</module>
+        <module>java8-juc-samples</module>
     </modules>
     <!--<parent>-->
         <!--<groupId>org.springframework.boot</groupId>-->
