@@ -14,7 +14,7 @@ public class DelayDemo implements Delayed {
 
     private static long currentTime = System.currentTimeMillis();
 
-    private String taskName;
+    public String taskName;
 
     //处理时长
     private int timeCost;
