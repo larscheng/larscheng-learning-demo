@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                  http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+<display-name>Archetype Created Web Application</display-name>
+    
+    <servlet>
+        <servlet-name>cookie</servlet-name>
+        <servlet-class>com.larscheng.www.cookie.CookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cookie</servlet-name>
+        <url-pattern>/cookie</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>session</servlet-name>
+        <servlet-class>com.larscheng.www.session.Session1Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>session</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>s2</servlet-name>
+        <servlet-class>com.larscheng.www.session.Session2Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s2</servlet-name>
+        <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+</web-app>

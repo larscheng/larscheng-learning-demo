@@ -23,5 +23,25 @@
 
 博客地址：https://www.larscheng.com/
 
-gitbook地址：https://larscheng.gitbook.io/mybook/
+gitbook地址(`停止维护`)：https://larscheng.gitbook.io/mybook/
 
+各模块内容说明： 
+
+- BaseDemo
+    - [SpringBoot集成mybatis、mongo、docker、rabbitmq....的基础脚手架](BaseDemo/README.md)
+- Design-Patterns
+    - [23种设计模式](Design-Patterns/README.md)
+- java8-juc-samples
+    - juc复习笔记
+- javaweb-learning-samples
+    - 重拾java-web代码[笔记](javaweb-learning-samples/README.md)
+- Memcache
+    - 了解Memcache
+- Nacos
+    - Nacos系列博客[源码](Nacos/README.md)
+- NearbySearch
+    - 附近的人搜索解决方案[源码](NearbySearch/README.md)
+- RabbitMQ
+    - rabbitmq学习笔记
+- Sortings
+    - 8大排序示例
