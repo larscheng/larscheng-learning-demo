@@ -55,8 +55,6 @@ public class RabbitMqConfig {
     }
 
 
-
-
     /******************************************延时队列****************************************************/
 
 
@@ -74,7 +72,6 @@ public class RabbitMqConfig {
     final static String DEAD_KEY = "dead.key";
 
 
-
     /**
      * 创建正常的direct交换机
      *
@@ -85,7 +82,9 @@ public class RabbitMqConfig {
         return new DirectExchange(EXCHANGE_NORMAL_TEST_01);
     }
 
-    /**ttl:在队列进行设置  10s*/
+    /**
+     * ttl:在队列进行设置  10s
+     */
     @Bean
     public Queue queueNormal01() {
         Map<String, Object> map = new HashMap<>();
@@ -109,7 +108,9 @@ public class RabbitMqConfig {
         return new DirectExchange(EXCHANGE_NORMAL_TEST_02);
     }
 
-    /**ttl:在每条消息进行设置*/
+    /**
+     * ttl:在每条消息进行设置
+     */
     @Bean
     public Queue queueNormal02() {
         Map<String, Object> map = new HashMap<>();
@@ -125,8 +126,6 @@ public class RabbitMqConfig {
         //绑定一个队列 to: 绑定到哪个交换机上面 with：绑定的路由建（routingKey）
         return BindingBuilder.bind(queueNormal02()).to(normalExchange02()).with(NORMAL_KEY);
     }
-
-
 
 
     /**

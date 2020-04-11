@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
- *  前端控制器
+ * 前端控制器
  * </p>
  *
  * @author larscheng
@@ -22,6 +22,7 @@ public class SelectSubjectController {
 
     @Autowired
     private SelectSubjectService selectSubjectService;
+
     @RequestMapping(value = "/app/v2/vehicle/deal", method = RequestMethod.GET)
     public String testAdd() {
         return selectSubjectService.addTest();

@@ -1,6 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page errorPage="common/error.jsp" %>
 <html>
 <body>
+<%@include file="common/header.jsp"%>
+
+
 <h2>Hello World!</h2>
 <%-- jsp注释 --%>
 <%-- jsp表达式      变量或者表达式<%= %>  --%>
@@ -22,6 +26,7 @@
     <h3>hahah121231233ah <%=i%></h3>
 <%}%>
 
+<%@include file="common/footer.jsp"%>
 
 </body>
 </html>

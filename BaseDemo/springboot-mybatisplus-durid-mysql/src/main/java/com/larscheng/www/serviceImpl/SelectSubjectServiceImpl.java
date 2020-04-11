@@ -30,15 +30,12 @@ public class SelectSubjectServiceImpl extends ServiceImpl<SelectSubjectMapper, S
     }
 
 
-
-
-
     private Date getDate(Date date) {
 //        SelectSubject subject2 = new SelectSubject().setGmtCreate(getDate(new Date(1582619235742L))).setId(1);
         Calendar cal1 = Calendar.getInstance();
         cal1.setTime(date);
         // 将毫秒域清零
-        cal1.set(Calendar.MILLISECOND,0);
+        cal1.set(Calendar.MILLISECOND, 0);
         return cal1.getTime();
     }
 

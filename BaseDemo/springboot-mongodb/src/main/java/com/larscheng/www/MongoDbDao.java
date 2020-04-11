@@ -132,21 +132,22 @@ public abstract class MongoDbDao<T> {
     }
 
     /*MongoDB中更新操作分为三种
-    * 1：updateFirst     修改第一条
-    * 2：updateMulti     修改所有匹配的记录
-    * 3：upsert  修改时如果不存在则进行添加操作
-    * */
+     * 1：updateFirst     修改第一条
+     * 2：updateMulti     修改所有匹配的记录
+     * 3：upsert  修改时如果不存在则进行添加操作
+     * */
 
     /**
      * 修改匹配到的第一条记录
+     *
      * @param srcObj
      * @param targetObj
      */
-    public void updateFirst(T srcObj, T targetObj){
+    public void updateFirst(T srcObj, T targetObj) {
         Query query = getQueryByObject(srcObj);
         Update update = getUpdateByObject(targetObj);
         logger.info("-------------->MongoDB updateFirst start");
-        this.mongoTemplate.updateFirst(query,update,this.getEntityClass());
+        this.mongoTemplate.updateFirst(query, update, this.getEntityClass());
     }
 
     /***
@@ -154,11 +155,11 @@ public abstract class MongoDbDao<T> {
      * @param srcObj
      * @param targetObj
      */
-    public void updateMulti(T srcObj, T targetObj){
+    public void updateMulti(T srcObj, T targetObj) {
         Query query = getQueryByObject(srcObj);
         Update update = getUpdateByObject(targetObj);
         logger.info("-------------->MongoDB updateFirst start");
-        this.mongoTemplate.updateMulti(query,update,this.getEntityClass());
+        this.mongoTemplate.updateMulti(query, update, this.getEntityClass());
     }
 
     /***
@@ -166,11 +167,11 @@ public abstract class MongoDbDao<T> {
      * @param srcObj
      * @param targetObj
      */
-    public void updateInsert(T srcObj, T targetObj){
+    public void updateInsert(T srcObj, T targetObj) {
         Query query = getQueryByObject(srcObj);
         Update update = getUpdateByObject(targetObj);
         logger.info("-------------->MongoDB updateInsert start");
-        this.mongoTemplate.upsert(query,update,this.getEntityClass());
+        this.mongoTemplate.upsert(query, update, this.getEntityClass());
     }
 
 
@@ -183,9 +184,9 @@ public abstract class MongoDbDao<T> {
         logger.info("--------------------->[MongoDB update start]");
         Query query = new Query(Criteria.where("_id").is(id));
         Update update = new Update();
-        update.addToSet(key,obj);
+        update.addToSet(key, obj);
         //upsert 更新对象不存在则去添加
-         mongoTemplate.upsert(query,update,this.getEntityClass());
+        mongoTemplate.upsert(query, update, this.getEntityClass());
     }
 
     /**
@@ -222,7 +223,7 @@ public abstract class MongoDbDao<T> {
         String[] fileds = getFiledName(object);
         for (int i = 0; i < fileds.length; i++) {
             String filedName = (String) fileds[i];
-            Object filedValue =getFieldValueByName(filedName, object);
+            Object filedValue = getFieldValueByName(filedName, object);
             if (filedValue != null) {
                 update.set(filedName, filedValue);
             }
@@ -262,7 +263,6 @@ public abstract class MongoDbDao<T> {
             return null;
         }
     }
-
 
 
 }

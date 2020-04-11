@@ -11,8 +11,8 @@ import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
 /**
- *
  * 代码生成器演示
+ *
  * @author larscheng
  * @date 2019/12/5 19:06
  */
@@ -27,7 +27,7 @@ public class MpGenerator {
         GlobalConfig gc = new GlobalConfig();
         gc.setOpen(false);
         /**换成你的目录*/
-        gc.setOutputDir(System.getProperty("user.dir")+"\\BaseDemo\\springboot-mybatisplus-durid-mysql\\src\\main\\java");
+        gc.setOutputDir(System.getProperty("user.dir") + "\\BaseDemo\\springboot-mybatisplus-durid-mysql\\src\\main\\java");
         //是否覆盖已有文件
         gc.setFileOverride(true);
         //XML是否需要BaseResultMap

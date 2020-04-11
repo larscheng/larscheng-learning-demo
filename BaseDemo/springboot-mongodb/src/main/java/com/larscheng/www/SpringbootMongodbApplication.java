@@ -60,7 +60,7 @@ public class SpringbootMongodbApplication {
     public String updateDemo(@RequestParam String id,
                              @RequestParam String key,
                              @RequestParam String obj) {
-        return bookMongoDbService.update(id,key,obj);
+        return bookMongoDbService.update(id, key, obj);
     }
 
 }

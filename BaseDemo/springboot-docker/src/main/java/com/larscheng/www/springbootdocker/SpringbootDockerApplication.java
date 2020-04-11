@@ -14,9 +14,7 @@ public class SpringbootDockerApplication {
     }
 
 
-
-
-    @GetMapping("/docker" )
+    @GetMapping("/docker")
     public void list() {
         System.out.println("this is docker demo service");
     }

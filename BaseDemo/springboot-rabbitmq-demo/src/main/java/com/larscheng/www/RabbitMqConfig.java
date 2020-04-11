@@ -21,9 +21,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class RabbitMqConfig {
 
-    final static String DIRECT_EXCHANGE_NAME="exchange_direct_test_001";
-    final static String DIRECT_QUEUE_NAME="queue_direct_test_001";
-    final static String ROUTING_KEY="larscheng";
+    final static String DIRECT_EXCHANGE_NAME = "exchange_direct_test_001";
+    final static String DIRECT_QUEUE_NAME = "queue_direct_test_001";
+    final static String ROUTING_KEY = "larscheng";
 
     /**
      * 创建direct交换机,路由模式
@@ -81,7 +81,7 @@ public class RabbitMqConfig {
             public Message toMessage(Object o, MessageProperties messageProperties) throws MessageConversionException {
                 messageProperties.setContentType("text/xml");
                 messageProperties.setContentEncoding("UTF-8");
-                return new Message(JSON.toJSONBytes(o),messageProperties);
+                return new Message(JSON.toJSONBytes(o), messageProperties);
             }
 
             @Override
@@ -101,8 +101,8 @@ public class RabbitMqConfig {
     private class MyConfirmCallback implements RabbitTemplate.ConfirmCallback {
         @Override
         public void confirm(CorrelationData correlationData, boolean b, String s) {
-            if (!b){
-                System.out.println("Broker接收消息异常------------> : " + correlationData + ","+ b + "," + s);
+            if (!b) {
+                System.out.println("Broker接收消息异常------------> : " + correlationData + "," + b + "," + s);
             }
         }
     }

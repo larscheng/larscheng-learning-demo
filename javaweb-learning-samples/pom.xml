@@ -15,6 +15,8 @@
         <module>part01-javaweb-servlet</module>
         <module>part02-session-cookie</module>
         <module>part03-java-jsp</module>
+        <module>part04-javaweb-filter</module>
+        <module>part05-java-jdbc</module>
     </modules>
 
     <dependencies>

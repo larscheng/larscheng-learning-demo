@@ -4,25 +4,25 @@
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.larscheng.www.domain.SelectSubject">
-        <id column="id" property="id" />
-        <result column="sub_name" property="subName" />
-        <result column="tea_id" property="teaId" />
-        <result column="sub_type" property="subType" />
-        <result column="sub_file" property="subFile" />
-        <result column="sub_content" property="subContent" />
-        <result column="sub_select_status" property="subSelectStatus" />
-        <result column="adm_audit_state" property="admAuditState" />
-        <result column="adm_audit_content" property="admAuditContent" />
-        <result column="adm_audit_id" property="admAuditId" />
-        <result column="tutor_score" property="tutorScore" />
-        <result column="judge_score" property="judgeScore" />
-        <result column="defence_score" property="defenceScore" />
-        <result column="final_total_score" property="finalTotalScore" />
-        <result column="for_dep_id" property="forDepId" />
-        <result column="sub_year" property="subYear" />
-        <result column="gmt_create" property="gmtCreate" />
-        <result column="gmt_modify" property="gmtModify" />
-        <result column="user_card_id" property="userCardId" />
+        <id column="id" property="id"/>
+        <result column="sub_name" property="subName"/>
+        <result column="tea_id" property="teaId"/>
+        <result column="sub_type" property="subType"/>
+        <result column="sub_file" property="subFile"/>
+        <result column="sub_content" property="subContent"/>
+        <result column="sub_select_status" property="subSelectStatus"/>
+        <result column="adm_audit_state" property="admAuditState"/>
+        <result column="adm_audit_content" property="admAuditContent"/>
+        <result column="adm_audit_id" property="admAuditId"/>
+        <result column="tutor_score" property="tutorScore"/>
+        <result column="judge_score" property="judgeScore"/>
+        <result column="defence_score" property="defenceScore"/>
+        <result column="final_total_score" property="finalTotalScore"/>
+        <result column="for_dep_id" property="forDepId"/>
+        <result column="sub_year" property="subYear"/>
+        <result column="gmt_create" property="gmtCreate"/>
+        <result column="gmt_modify" property="gmtModify"/>
+        <result column="user_card_id" property="userCardId"/>
     </resultMap>
 
     <!-- 通用查询结果列 -->

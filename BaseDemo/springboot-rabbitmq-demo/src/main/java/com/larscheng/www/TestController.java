@@ -25,14 +25,14 @@ public class TestController {
     @RabbitHandler
     @RabbitListener(queues = RabbitMqConfig.DIRECT_QUEUE_NAME)
     public void process(String msg) {
-        log.info("Receiver: {}" , msg);
+        log.info("Receiver: {}", msg);
     }
 
 
     @RequestMapping("/send")
     public void send() {
         for (int i = 0; i < 20; i++) {
-            this.rabbitTemplate.convertAndSend(RabbitMqConfig.DIRECT_EXCHANGE_NAME, RabbitMqConfig.ROUTING_KEY, "第 " + i+" 个消息");
+            this.rabbitTemplate.convertAndSend(RabbitMqConfig.DIRECT_EXCHANGE_NAME, RabbitMqConfig.ROUTING_KEY, "第 " + i + " 个消息");
         }
     }
 
