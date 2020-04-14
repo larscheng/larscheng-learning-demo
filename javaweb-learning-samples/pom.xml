@@ -17,6 +17,7 @@
         <module>part03-java-jsp</module>
         <module>part04-javaweb-filter</module>
         <module>part05-java-jdbc</module>
+        <module>part06-java-mail</module>
     </modules>
 
     <dependencies>
