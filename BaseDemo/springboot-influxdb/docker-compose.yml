@@ -23,8 +23,8 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - INFLUXDB_DB=testdb
-      - INFLUXDB_ADMIN_USER=senthink
-      - INFLUXDB_ADMIN_PASSWORD=senthink123!
+      - INFLUXDB_ADMIN_USER=admin
+      - INFLUXDB_ADMIN_PASSWORD=123456
       - INFLUXDB_HTTP_AUTH_ENABLED=true
       - INFLUXDB_ADMIN_ENABLED=true
     networks:
